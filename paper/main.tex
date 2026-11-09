@@ -34,6 +34,7 @@
 \setlist{itemsep=3pt,topsep=5pt}
 \setlength{\emergencystretch}{1em}
 \raggedbottom
+\usepackage{xurl}
 \begin{document}
 \begin{abstract}
 The spectral sample and pivotal set of a percolation crossing have the same one- and two-coordinate inclusion probabilities under the uniform product measure. We prove that both Shannon entropies are comparable to total influence for critical square-lattice bond and triangular-lattice site crossings, with matching estimates at every retained nonroot spatial resolution. The triangular entropy bounds are uniform over a class of inhomogeneous near-critical product measures. For critical triangular-site square crossings, the two laws are asymptotically mutually singular: an elementary triangular face is forbidden in the pivotal set and occurs with positive density in a large spectral sample. Every fixed face density below an explicit threshold has nonempty spectral probability comparable to $R^2\alpha_4(R)^2$, while the nonempty overlap of the two laws lies between $R^{-11/12+o(1)}$ and $R^{-1/2+o(1)}$, and equals $R^{-11/12+o(1)}$ if the Garban--Pete--Schramm bound on small spectral samples extends to pivotal sets. Their minimum expected symmetric-difference distance over all couplings is comparable to total influence. Geometric separation persists after independent thinning whenever the retention probability $\rho_R$ satisfies $\rho_R^3R^2\alpha_4(R)\to\infty$; the face detector fails when this quantity tends to zero. The proofs combine spatial encoding, arm estimates, local Fourier cancellation, and an exact six-cycle coercivity inequality preserved under exterior conditioning.
@@ -1548,6 +1549,8 @@ Science Foundation (ISF Grant 4101/25). Computational resources were
 provided in part by Google Cloud through its education credits program
 (credit 530550103).
 
+This work was done by multiple AI agents, Claude (Anthropic) and Codex (OpenAI), connected to Math Brain~\cite{MathBrainRepo} and working together inside the Brain framework~\cite{BrainFramework}, a shared, persistent memory in which the agents record claims, proofs, failed attempts and methods, retrieve one another's results, coordinate who works on what, and audit each other's work. For more on the details behind the Brain and Math Brain, see the Math Brain paper~\cite{MathBrainPaper}, the Math Brain repository~\cite{MathBrainRepo} and the Brain framework repository~\cite{BrainFramework}.
+
 \section*{Declaration of competing interest}
 The author holds equity in Heights Labs and in Convex Nexus Capital and
 has a management role at Convex Nexus Capital. These entities are included
@@ -1558,6 +1561,8 @@ The paper comes out of Math Brain, an ongoing project on the use of AI systems f
 
 \section*{Data availability}
 No data were used. A script that recomputes the matrices and eigenvalues of Section~\ref{sec:coercivity}, and the Lean verification of Lemma~\ref{lem:rank} and Proposition~\ref{prop:coercivity}, are available at \url{https://github.com/yspennstate/percolation-crossing-entropy}.
+
+The paper is part of the Math Brain project, whose public repository is \url{https://github.com/yspennstate/math-brain-public}~\cite{MathBrainRepo}.
 
 \begin{thebibliography}{99}
 \bibitem{BKS}
@@ -1697,6 +1702,12 @@ in Proceedings of the 5th Conference on Innovations in Theoretical Computer Scie
 ACM, 2014, 67--80.
 \href{https://doi.org/10.1145/2554797.2554806}{doi:10.1145/2554797.2554806}.
 \href{https://arxiv.org/abs/1312.3003v1}{arXiv:1312.3003v1}.
+\bibitem{MathBrainRepo} Y.~Shmalo, \emph{Math Brain: public snapshot, code and tests}, 2026, \url{https://github.com/yspennstate/math-brain-public}.
+
+\bibitem{MathBrainPaper} Y.~Shmalo, \emph{Math Brain: shared, auditable memory for multi-agent mathematical research}, October 2026, \url{https://github.com/yspennstate/math-brain-public/tree/main/papers/math-brain-2026-10-24}.
+
+\bibitem{BrainFramework} Y.~Shmalo, \emph{Brain Framework}, public software repository, 2026, \url{https://github.com/yspennstate/brain-framework-public}.
+
 \end{thebibliography}
 
 \end{document}
